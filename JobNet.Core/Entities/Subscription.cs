@@ -12,6 +12,8 @@ namespace JobNet.Core.Entities
         [Key]
         public int SubscriberID { get; set; }
         public int UserId { get; set; }
+
+        public User User { get; set; }
         public DateTime SubscriptionDate { get; set; }
     }
 }

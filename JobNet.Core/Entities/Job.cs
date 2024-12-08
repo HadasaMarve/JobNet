@@ -13,6 +13,8 @@ namespace JobNet.Core.Entities
         public int JobID { get; set; }
 
         public int EmployerID { get; set; }
+
+        public Employer Employer { get; set; }
         public string Title { get; set; }
 
         public string Description { get; set; }

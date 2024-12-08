@@ -1,5 +1,6 @@
 ﻿using JobNet.Core.Entities;
 using JobNet.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,12 @@ namespace JobNet.Data.Repositories
         }
         public IEnumerable<Subscription> GetAll()
         {
-            return _context.Subscriptions;
+            return _context.Subscriptions.Include(s => s.User);
         }
 
         public Subscription Get(int id)
         {
-            return _context.Subscriptions.FirstOrDefault(s => s.SubscriberID == id);
+            return _context.Subscriptions.Include(s => s.User).First(s => s.SubscriberID == id);
         }
 
         public Subscription Add(Subscription subscription)

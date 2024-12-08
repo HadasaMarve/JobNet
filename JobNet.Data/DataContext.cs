@@ -21,7 +21,7 @@ namespace JobNet.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=JobNets");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=JobNet");
             optionsBuilder.LogTo(m => Debug.WriteLine(m));
         }
         //public DataContext() 

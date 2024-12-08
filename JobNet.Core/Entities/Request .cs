@@ -12,7 +12,11 @@ namespace JobNet.Core.Entities
         [Key]
         public int RequestID { get; set; }
         public int JobID { get; set; }
+
+        public Job Job { get; set; }
         public int UserID { get; set; }
+
+        public User User { get; set; }
         public string Message { get; set; }
         public DateTime RequestDate { get; set; }
     }

@@ -23,7 +23,7 @@ namespace JobNet.Data.Repositories
 
         public User Get(int id)
         {
-            return _context.Users.FirstOrDefault(s => s.UserID == id);
+            return _context.Users.First(s => s.UserID == id);
         }
 
         public User Add(User user)

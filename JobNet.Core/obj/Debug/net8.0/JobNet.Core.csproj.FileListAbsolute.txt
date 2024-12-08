@@ -20,3 +20,15 @@ C:\Users\user\דסי\הנדסאים\שנה ב\net Core\lesson8\JobNet\JobNet\Job
 C:\Users\user\דסי\הנדסאים\שנה ב\net Core\lesson8\JobNet\JobNet\JobNet.Core\obj\Debug\net8.0\refint\JobNet.Core.dll
 C:\Users\user\דסי\הנדסאים\שנה ב\net Core\lesson8\JobNet\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.pdb
 C:\Users\user\דסי\הנדסאים\שנה ב\net Core\lesson8\JobNet\JobNet\JobNet.Core\obj\Debug\net8.0\ref\JobNet.Core.dll
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\bin\Debug\net8.0\JobNet.Core.deps.json
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\bin\Debug\net8.0\JobNet.Core.dll
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\bin\Debug\net8.0\JobNet.Core.pdb
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.AssemblyInfoInputs.cache
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.AssemblyInfo.cs
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.csproj.CoreCompileInputs.cache
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.sourcelink.json
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.dll
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\refint\JobNet.Core.dll
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\JobNet.Core.pdb
+T:\Group B\NetCore\dasi marve\lesson9\JobNet\JobNet.Core\obj\Debug\net8.0\ref\JobNet.Core.dll

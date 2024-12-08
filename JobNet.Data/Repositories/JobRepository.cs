@@ -1,5 +1,6 @@
 ﻿using JobNet.Core.Entities;
 using JobNet.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,12 @@ namespace JobNet.Data.Repositories
         }
         public IEnumerable<Job> GetAll()
         {
-            return _context.Jobs.Where(s => !string.IsNullOrEmpty(s.Title));
+            return _context.Jobs.Where(s => !string.IsNullOrEmpty(s.Title)).Include(s => s.Employer);
         }
 
         public Job Get(int id)
         {
-            return _context.Jobs.FirstOrDefault(s => s.JobID == id);
+            return _context.Jobs.Include(s => s.Employer).First(s => s.JobID == id);
         }
 
         public Job Add(Job job)
