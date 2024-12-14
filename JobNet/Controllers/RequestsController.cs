@@ -1,4 +1,7 @@
-﻿using JobNet.Core.Entities;
+﻿using AutoMapper;
+using JobNet.Models;
+using JobNet.Core.DTOs;
+using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,17 +15,20 @@ namespace JobNet.Controllers
     {
 
         private readonly IRequestService _requestService;
+        private readonly IMapper _mapper;
 
-        public RequestsController(IRequestService requestService)
+        public RequestsController(IRequestService requestService, IMapper mapper)
         {
             _requestService = requestService;
+            _mapper = mapper;
         }
 
         // GET: api/<RequestsController>
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_requestService.GetList());
+            var requestsDto = _mapper.Map<IEnumerable<RequestDto>>(_requestService.GetList());
+            return Ok(requestsDto);
         }
 
         // GET api/<RequestsController>/5
@@ -34,19 +40,21 @@ namespace JobNet.Controllers
             {
                 return NotFound();
             }
-            return Ok(request);
+            var requestDto = _mapper.Map<RequestDto>(request);
+            return Ok(requestDto);
         }
 
         // POST api/<RequestsController>
         [HttpPost]
         public ActionResult Post([FromBody] Request value)
         {
-            var request = _requestService.Get(value.RequestID);
-            if (request == null)
-            {
-                return Ok(_requestService.Add(value));
-            }
-            return Conflict();
+            //var request = _requestService.Get(value.RequestID);
+            //if (request == null)
+            //{
+                var request = new Request { RequestID = value.RequestID, JobID = value.JobID, UserID = value.UserID, Message = value.Message, RequestDate = value.RequestDate };
+                return Ok(_requestService.Add(request));
+            //}
+            //return Conflict();
         }
 
         // PUT api/<RequestsController>/5

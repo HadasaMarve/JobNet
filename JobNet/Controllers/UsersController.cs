@@ -1,4 +1,8 @@
-﻿using JobNet.Core.Entities;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using JobNet.Models;
+using JobNet.Core.DTOs;
+using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,16 +15,19 @@ namespace JobNet.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IMapper _mapper;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, IMapper mapper)
         {
             _userService = userService;
+            _mapper = mapper;
         }
         // GET: api/<UsersController>
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_userService.GetList());
+            var usersDto = _mapper.Map<IEnumerable<UserDto>>(_userService.GetList());
+            return Ok(usersDto);
         }
 
         // GET api/<UsersController>/5
@@ -32,19 +39,21 @@ namespace JobNet.Controllers
             {
                 return NotFound();
             }
-            return Ok(user);
+            var userDto = _mapper.Map<UserDto>(user);
+            return Ok(userDto);
         }
 
         // POST api/<UsersController>
         [HttpPost]
         public ActionResult Post([FromBody] User value)
         {
-            var user = _userService.Get(value.UserID);
-            if (user == null)
-            {
-                return Ok(_userService.Add(value));
-            }
-            return Conflict();
+            //var user = _userService.Get(value.UserID);
+            //if (user == null)
+            //{
+                var user = new User { UserID = value.UserID, UserName = value.UserName, Email = value.Email, Password = value.Password, Role = value.Role };
+                return Ok(_userService.Add(user));
+            //}
+            //return Conflict();
         }
 
         // PUT api/<UsersController>/5

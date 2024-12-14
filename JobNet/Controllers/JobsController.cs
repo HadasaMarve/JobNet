@@ -1,4 +1,6 @@
-﻿using JobNet.Core.Entities;
+﻿using AutoMapper;
+using JobNet.Core.DTOs;
+using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +13,12 @@ namespace JobNet.Controllers
     public class JobsController : ControllerBase
     {
         private readonly IJobService _jobService;
+        private readonly IMapper _mapper;
 
-        public JobsController(IJobService jobService)
+        public JobsController(IJobService jobService, IMapper mapper)
         {
             _jobService = jobService;
+            _mapper = mapper;
         }
 
 
@@ -22,8 +26,8 @@ namespace JobNet.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            
-                return Ok(_jobService.GetList());
+            var jobsDto = _mapper.Map<IEnumerable<JobDto>>(_jobService.GetList());
+            return Ok(jobsDto);
         }
 
             // GET api/<JobsController>/5
@@ -35,19 +39,21 @@ namespace JobNet.Controllers
             {
                 return NotFound();
             }
-            return Ok(job);
+            var jobDto = _mapper.Map<JobDto>(job);
+            return Ok(jobDto);
         }
 
             // POST api/<JobsController>
             [HttpPost]
             public ActionResult Post([FromBody] Job value)
             {
-                var job = _jobService.Get(value.JobID);
-                if (job == null)
-                {
-                    return Ok(_jobService.Add(value));
-                }
-                return Conflict();
+                //var job = _jobService.Get(value.JobID);
+                //if (job == null)
+                //{
+                var job = new Job { JobID=value.JobID, EmployerID = value.EmployerID, Description = value.Description, Title = value.Title, Location = value.Location, Salary=value.Salary,PostedDate=value.PostedDate };
+                return Ok(_jobService.Add(job));
+            //}
+            //    return Conflict();
             }
 
             // PUT api/<JobsController>/5

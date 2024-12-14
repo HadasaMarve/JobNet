@@ -1,4 +1,6 @@
-﻿using JobNet.Core.Entities;
+﻿using AutoMapper;
+using JobNet.Core.DTOs;
+using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +13,12 @@ namespace JobNet.Controllers
     public class EmployersController : ControllerBase
     {
         private readonly IEmployerService _employerService;
+        private readonly IMapper _mapper;
 
-        public EmployersController(IEmployerService employerService)
+        public EmployersController(IEmployerService employerService, IMapper mapper)
         {
             _employerService = employerService;
+            _mapper = mapper;
         }
 
 
@@ -22,7 +26,8 @@ namespace JobNet.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_employerService.GetList());
+            var employersDto = _mapper.Map<IEnumerable<EmployerDto>>(_employerService.GetList());
+            return Ok(employersDto);
         }
 
         // GET api/<EmployersController>/5
@@ -34,19 +39,21 @@ namespace JobNet.Controllers
             {
                 return NotFound();
             }
-            return Ok(employer);
+            var employerDto = _mapper.Map<EmployerDto>(employer);
+            return Ok(employerDto);
         }
 
         // POST api/<EmployersController>
         [HttpPost]
         public ActionResult Post([FromBody] Employer value)
         {
-            var employer = _employerService.Get(value.EmployerID);
-            if (employer == null)
-            {
-                return Ok(_employerService.Add(value));
-            }
-            return Conflict();
+            //var employer = _employerService.Get(value.EmployerID);
+            //if (employer == null)
+            //{
+                var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
+                return Ok(_employerService.Add(employer));
+            //}
+            //return Conflict();
         }
 
         // PUT api/<EmployersController>/5

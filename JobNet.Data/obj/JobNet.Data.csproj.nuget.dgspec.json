@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Data\\JobNet.Data.csproj": {}
+    "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Data\\JobNet.Data.csproj": {}
   },
   "projects": {
-    "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\JobNet.Core.csproj": {
+    "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\JobNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
         "projectName": "JobNet.Core",
-        "projectPath": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\obj\\",
+        "projectPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,25 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Data\\JobNet.Data.csproj": {
+    "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Data\\JobNet.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
+        "projectUniqueName": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
         "projectName": "JobNet.Data",
-        "projectPath": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Data\\obj\\",
+        "projectPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\JobNet.Core.csproj": {
-                "projectPath": "T:\\Group B\\NetCore\\dasi marve\\lesson9\\JobNet\\JobNet.Core\\JobNet.Core.csproj"
+              "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\JobNet.Core.csproj": {
+                "projectPath": "C:\\Users\\user\\דסי\\הנדסאים\\שנה ב\\net Core\\lesson9\\JobNet\\JobNet\\JobNet.Core\\JobNet.Core.csproj"
               }
             }
           }
@@ -146,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
