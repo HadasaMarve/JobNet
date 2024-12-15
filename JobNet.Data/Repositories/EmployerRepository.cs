@@ -1,5 +1,6 @@
 ﻿using JobNet.Core.Entities;
 using JobNet.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +17,9 @@ namespace JobNet.Data.Repositories
         {
             _context = context;
         }
-        public IEnumerable<Employer> GetAll()
+        public async Task<IEnumerable<Employer>> GetAllAsync()
         {
-            return _context.Employers.Where(e => !string.IsNullOrEmpty(e.CompanyName));
+            return await _context.Employers.Where(e => !string.IsNullOrEmpty(e.CompanyName)).ToListAsync();
         }
 
         public Employer Get(int id)
@@ -26,10 +27,10 @@ namespace JobNet.Data.Repositories
             return _context.Employers.FirstOrDefault(s => s.EmployerID == id);
         }
 
-        public Employer Add(Employer employer)
+        public async Task<Employer> AddAsync(Employer employer)
         {
             _context.Employers.Add(employer);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return employer;
         }
     }

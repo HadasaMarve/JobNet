@@ -9,10 +9,10 @@ namespace JobNet.Core.Services
 {
     public interface ISubscriptionService
     {
-        public IEnumerable<Subscription> GetList();
+        public Task<IEnumerable<Subscription>> GetAllAsync();
 
         public Subscription Get(int id);
 
-        public Subscription Add(Subscription subscription);
+        public Task<Subscription> AddAsync(Subscription subscription);
     }
 }

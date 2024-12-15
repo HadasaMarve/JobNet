@@ -17,12 +17,12 @@ namespace JobNet.Service
             _JobRepository = jobRepository;
         }
 
-        public IEnumerable<Job> GetList()
+        public async Task<IEnumerable<Job>> GetAllAsync()
         {
             //לוגיקה עיסקית
             //קבלת נתונים מה db
             //לוגיקה עסקית
-            return _JobRepository.GetAll();
+            return await _JobRepository.GetAllAsync();
         }
 
         public Job Get(int id)
@@ -30,9 +30,9 @@ namespace JobNet.Service
             return _JobRepository.Get(id);
         }
 
-        public Job Add(Job job)
+        public async Task<Job> AddAsync(Job job)
         {
-            return _JobRepository.Add(job);
+            return await _JobRepository.AddAsync(job);
         }
     }
 }

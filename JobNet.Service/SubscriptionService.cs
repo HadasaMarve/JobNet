@@ -17,12 +17,12 @@ namespace JobNet.Service
             _SubscriptionRepository = subscriptionRepository;
         }
 
-        public IEnumerable<Subscription> GetList()
+        public async Task<IEnumerable<Subscription>> GetAllAsync()
         {
             //לוגיקה עיסקית
             //קבלת נתונים מה db
             //לוגיקה עסקית
-            return _SubscriptionRepository.GetAll();
+            return await _SubscriptionRepository.GetAllAsync();
         }
 
         public Subscription Get(int id)
@@ -30,9 +30,9 @@ namespace JobNet.Service
             return _SubscriptionRepository.Get(id);
         }
 
-        public Subscription Add(Subscription subscription)
+        public async Task<Subscription> AddAsync(Subscription subscription)
         {
-            return _SubscriptionRepository.Add(subscription);
+            return await _SubscriptionRepository.AddAsync(subscription);
         }
     }
 }

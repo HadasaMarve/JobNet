@@ -77,6 +77,8 @@ namespace JobNet.Data.Migrations
 
                     b.HasKey("JobID");
 
+                    b.HasIndex("EmployerID");
+
                     b.ToTable("Jobs");
                 });
 
@@ -103,6 +105,10 @@ namespace JobNet.Data.Migrations
 
                     b.HasKey("RequestID");
 
+                    b.HasIndex("JobID");
+
+                    b.HasIndex("UserID");
+
                     b.ToTable("Requests");
                 });
 
@@ -121,6 +127,8 @@ namespace JobNet.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("SubscriberID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Subscriptions");
                 });
@@ -152,6 +160,47 @@ namespace JobNet.Data.Migrations
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("JobNet.Core.Entities.Job", b =>
+                {
+                    b.HasOne("JobNet.Core.Entities.Employer", "Employer")
+                        .WithMany()
+                        .HasForeignKey("EmployerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employer");
+                });
+
+            modelBuilder.Entity("JobNet.Core.Entities.Request", b =>
+                {
+                    b.HasOne("JobNet.Core.Entities.Job", "Job")
+                        .WithMany()
+                        .HasForeignKey("JobID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JobNet.Core.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Job");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("JobNet.Core.Entities.Subscription", b =>
+                {
+                    b.HasOne("JobNet.Core.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace JobNet.Core
 {
-    public class MappingProfile:profile
+    public class MappingProfile:Profile
     {
         public MappingProfile()
         {

@@ -9,10 +9,10 @@ namespace JobNet.Core.Services
 {
     public interface IEmployerService
     {
-        public IEnumerable<Employer> GetList();
+        public Task<IEnumerable<Employer>> GetAllAsync();
 
         public Employer Get(int id);
 
-        public Employer Add(Employer employer);
+        public Task<Employer> AddAsync(Employer employer);
     }
 }

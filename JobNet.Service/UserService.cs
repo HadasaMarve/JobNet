@@ -17,12 +17,12 @@ namespace JobNet.Service
             _UserRepository = userRepository;
         }
 
-        public IEnumerable<User> GetList()
+        public async Task<IEnumerable<User>> GetAllAsync()
         {
             //לוגיקה עיסקית
             //קבלת נתונים מה db
             //לוגיקה עסקית
-            return _UserRepository.GetAll();
+            return await _UserRepository.GetAllAsync();
         }
 
         public User Get(int id)
@@ -30,9 +30,9 @@ namespace JobNet.Service
             return _UserRepository.Get(id);
         }
 
-        public User Add(User user)
+        public async Task<User> AddAsync(User user)
         {
-            return _UserRepository.Add(user);
+            return await _UserRepository.AddAsync(user);
         }
     }
 }

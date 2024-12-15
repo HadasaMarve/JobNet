@@ -9,10 +9,10 @@ namespace JobNet.Core.Services
 {
     public interface IRequestService
     {
-        public IEnumerable<Request> GetList();
+        public Task<IEnumerable<Request>> GetAllAsync();
 
         public Request Get(int id);
 
-        public Request Add(Request request);
+        public Task<Request> AddAsync(Request request);
     }
 }

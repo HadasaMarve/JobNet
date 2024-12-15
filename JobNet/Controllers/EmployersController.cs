@@ -24,9 +24,10 @@ namespace JobNet.Controllers
 
         // GET: api/<EmployersController>
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var employersDto = _mapper.Map<IEnumerable<EmployerDto>>(_employerService.GetList());
+            var employers = await _employerService.GetAllAsync();
+            var employersDto = _mapper.Map<IEnumerable<EmployerDto>>(employers.Result);
             return Ok(employersDto);
         }
 
@@ -45,12 +46,13 @@ namespace JobNet.Controllers
 
         // POST api/<EmployersController>
         [HttpPost]
-        public ActionResult Post([FromBody] Employer value)
+        public async Task<ActionResult> Post([FromBody] Employer value)
         {
             //var employer = _employerService.Get(value.EmployerID);
             //if (employer == null)
             //{
                 var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
+                var e=await _employerService.AddAsync(employer);
                 return Ok(_employerService.Add(employer));
             //}
             //return Conflict();

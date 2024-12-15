@@ -1,4 +1,6 @@
-﻿namespace JobNet.Models
+﻿using JobNet.Core.Entities;
+
+namespace JobNet.Models
 {
     public class SubscriptionPostModel
     {

@@ -9,11 +9,11 @@ namespace JobNet.Core.Repositories
 {
     public interface IEmployerRepository
     {
-        public IEnumerable<Employer> GetAll();
+        public Task<IEnumerable<Employer>> GetAllAsync();
 
         public Employer Get(int id);
 
-        public Employer Add(Employer employer);
+        public Task<Employer> AddAsync(Employer employer);
 
 
     }

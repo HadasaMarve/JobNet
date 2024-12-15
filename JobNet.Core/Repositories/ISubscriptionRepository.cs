@@ -9,11 +9,11 @@ namespace JobNet.Core.Repositories
 {
     public interface ISubscriptionRepository
     {
-        public IEnumerable<Subscription> GetAll();
+        public Task<IEnumerable<Subscription>> GetAllAsync();
 
         public Subscription Get(int id);
 
-        public Subscription Add(Subscription subscription);
+        public Task<Subscription> AddAsync(Subscription subscription);
 
     }
 }

@@ -9,10 +9,10 @@ namespace JobNet.Core.Services
 {
     public interface IJobService
     {
-        public IEnumerable<Job> GetList();
+        public Task<IEnumerable<Job>> GetAllAsync();
 
         public Job Get(int id);
 
-        public Job Add(Job job);
+        public Task<Job> AddAsync(Job job);
     }
 }

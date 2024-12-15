@@ -17,9 +17,9 @@ namespace JobNet.Data.Repositories
         {
             _context = context;
         }
-        public IEnumerable<Subscription> GetAll()
+        public async Task<IEnumerable<Subscription>> GetAllAsync()
         {
-            return _context.Subscriptions.Include(s => s.User);
+            return await _context.Subscriptions.Include(s => s.User).ToListAsync();
         }
 
         public Subscription Get(int id)
@@ -27,10 +27,10 @@ namespace JobNet.Data.Repositories
             return _context.Subscriptions.Include(s => s.User).First(s => s.SubscriberID == id);
         }
 
-        public Subscription Add(Subscription subscription)
+        public async Task<Subscription> AddAsync(Subscription subscription)
         {
             _context.Subscriptions.Add(subscription);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return subscription;
         }
     }

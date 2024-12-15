@@ -9,10 +9,10 @@ namespace JobNet.Core.Services
 {
     public interface IUserService
     {
-        public IEnumerable<User> GetList();
+        public Task<IEnumerable<User>> GetAllAsync();
 
         public User Get(int id);
 
-        public User Add(User user);
+        public Task<User> AddAsync(User user);
     }
 }

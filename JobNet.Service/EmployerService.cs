@@ -19,12 +19,12 @@ namespace JobNet.Service
         }
 
 
-        public IEnumerable<Employer> GetList()
+        public async Task<IEnumerable<Employer>> GetAllAsync()
         {
             //לוגיקה עיסקית
             //קבלת נתונים מה db
             //לוגיקה עסקית
-            return _EmployerRepository.GetAll();
+            return await _EmployerRepository.GetAllAsync();
         }
 
         public Employer Get(int id)
@@ -32,9 +32,9 @@ namespace JobNet.Service
             return _EmployerRepository.Get(id);
         }
 
-        public Employer Add(Employer employer)
+        public async Task<Employer> AddAsync(Employer employer)
         {
-            return _EmployerRepository.Add(employer);
+            return await _EmployerRepository.AddAsync(employer);
         }
     }
 }
