@@ -820,11 +820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "T:\\Group B\\NetCore\\dasi marve\\lesson10\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
+      "projectUniqueName": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
       "projectName": "JobNet.Core",
-      "projectPath": "T:\\Group B\\NetCore\\dasi marve\\lesson10\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
+      "projectPath": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\JobNet.Core.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "T:\\Group B\\NetCore\\dasi marve\\lesson10\\JobNet\\JobNet.Core\\obj\\",
+      "outputPath": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

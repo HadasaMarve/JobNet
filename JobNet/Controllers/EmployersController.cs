@@ -27,7 +27,7 @@ namespace JobNet.Controllers
         public async Task<ActionResult> Get()
         {
             var employers = await _employerService.GetAllAsync();
-            var employersDto = _mapper.Map<IEnumerable<EmployerDto>>(employers.Result);
+            var employersDto = _mapper.Map<IEnumerable<EmployerDto>>(employers);
             return Ok(employersDto);
         }
 
@@ -53,7 +53,7 @@ namespace JobNet.Controllers
             //{
                 var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
                 var e=await _employerService.AddAsync(employer);
-                return Ok(_employerService.Add(employer));
+                return Ok(e);
             //}
             //return Conflict();
         }

@@ -37,7 +37,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 //builder.Services.AddSingleton<DataContext>();
 builder.Services.AddDbContext<DataContext>();
 
-//builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 var app = builder.Build();
 

@@ -27,7 +27,7 @@ namespace JobNet.Controllers
         public async Task<ActionResult> Get()
         {
             var subscription = await _subscriptionService.GetAllAsync();
-            var subscriptionsDto = _mapper.Map<IEnumerable<SubscriptionDto>>(subscription.Result);
+            var subscriptionsDto = _mapper.Map<IEnumerable<SubscriptionDto>>(subscription);
             return Ok(subscriptionsDto);
         }
 

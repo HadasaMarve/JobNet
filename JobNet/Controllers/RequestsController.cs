@@ -25,10 +25,10 @@ namespace JobNet.Controllers
 
         // GET: api/<RequestsController>
         [HttpGet]
-        public async task<ActionResult> Get()
+        public async Task<ActionResult> Get()
         {
             var requests = await _requestService.GetAllAsync();
-            var requestsDto = _mapper.Map<IEnumerable<RequestDto>>(requests.Result);
+            var requestsDto = _mapper.Map<IEnumerable<RequestDto>>(requests);
             return Ok(requestsDto);
         }
 

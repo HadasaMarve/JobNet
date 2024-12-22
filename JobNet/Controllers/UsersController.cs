@@ -27,7 +27,7 @@ namespace JobNet.Controllers
         public async Task<ActionResult> Get()
         {
             var user = await _userService.GetAllAsync();
-            var usersDto = _mapper.Map<IEnumerable<UserDto>>(user.Result);
+            var usersDto = _mapper.Map<IEnumerable<UserDto>>(user);
             return Ok(usersDto);
         }
 

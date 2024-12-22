@@ -27,7 +27,7 @@ namespace JobNet.Controllers
         public async Task<ActionResult> Get()
         {
             var jobs = await _jobService.GetAllAsync();
-            var jobsDto = _mapper.Map<IEnumerable<JobDto>>(jobs.Result);
+            var jobsDto = _mapper.Map<IEnumerable<JobDto>>(jobs);
             return Ok(jobsDto);
         }
 

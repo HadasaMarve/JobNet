@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pEgWzlL5yXI=",
+  "dgSpecHash": "o/fQG8fL3Jc=",
   "success": true,
-  "projectFilePath": "T:\\Group B\\NetCore\\dasi marve\\lesson10\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
+  "projectFilePath": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\JobNet.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\student\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

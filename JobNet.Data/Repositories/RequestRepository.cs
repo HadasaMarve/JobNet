@@ -19,7 +19,7 @@ namespace JobNet.Data.Repositories
         }
         public async Task<IEnumerable<Request>> GetAllAsync()
         {
-            return await _context.Requests.Where(s => !string.IsNullOrEmpty(s.Message)).Include(s=>s.User).Include(s=>s.Job).ToListAsync();
+            return await _context.Requests.Where(s => !string.IsNullOrEmpty(s.Message)).Include(s=>s.User).Include(s=>s.Job).Include(s=>s.Job.Employer).ToListAsync();
         }
 
         public Request Get(int id)
