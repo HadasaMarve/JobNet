@@ -14,5 +14,7 @@ namespace JobNet.Core.Services
         public Employer Get(int id);
 
         public Task<Employer> AddAsync(Employer employer);
+
+        public Task<Employer> DeleteAsync(int id);
     }
 }

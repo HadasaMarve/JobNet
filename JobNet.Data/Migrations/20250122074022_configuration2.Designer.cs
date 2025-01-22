@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobNet.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241222115414_async2")]
-    partial class async2
+    [Migration("20250122074022_configuration2")]
+    partial class configuration2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,8 +45,6 @@ namespace JobNet.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("EmployerID");
-
-                    b.HasIndex("UserID");
 
                     b.ToTable("Employers");
                 });
@@ -165,17 +163,6 @@ namespace JobNet.Data.Migrations
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("JobNet.Core.Entities.Employer", b =>
-                {
-                    b.HasOne("JobNet.Core.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("JobNet.Core.Entities.Job", b =>

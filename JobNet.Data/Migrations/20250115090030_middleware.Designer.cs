@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobNet.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241222120646_async4")]
-    partial class async4
+    [Migration("20250115090030_middleware")]
+    partial class middleware
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

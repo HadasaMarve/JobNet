@@ -1,3 +1,4 @@
+using JobNet.Middlewares;
 using JobNet.Core;
 using JobNet.Core.Repositories;
 using JobNet.Core.Services;
@@ -5,6 +6,8 @@ using JobNet.Data;
 using JobNet.Data.Repositories;
 using JobNet.Service;
 using System.Text.Json.Serialization;
+using JobNet.Models;
+using JobNet;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,7 +40,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 //builder.Services.AddSingleton<DataContext>();
 builder.Services.AddDbContext<DataContext>();
 
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(typeof(MappingProfile),typeof(MappingPostModel));
 
 var app = builder.Build();
 
@@ -51,6 +54,13 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ShabbosBlockingMiddleware>();
+
+app.Use(async (context, next) =>
+{   
+    await next(context);
+});
 
 app.MapControllers();
 

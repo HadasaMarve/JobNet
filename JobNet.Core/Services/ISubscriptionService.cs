@@ -14,5 +14,7 @@ namespace JobNet.Core.Services
         public Subscription Get(int id);
 
         public Task<Subscription> AddAsync(Subscription subscription);
+
+        public Task<Subscription> DeleteAsync(int id);
     }
 }

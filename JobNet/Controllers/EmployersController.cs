@@ -2,6 +2,7 @@
 using JobNet.Core.DTOs;
 using JobNet.Core.Entities;
 using JobNet.Core.Services;
+using JobNet.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -46,16 +47,12 @@ namespace JobNet.Controllers
 
         // POST api/<EmployersController>
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] Employer value)
+        public async Task<ActionResult> Post([FromBody] EmployerPostModel value)
         {
-            //var employer = _employerService.Get(value.EmployerID);
-            //if (employer == null)
-            //{
-                var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
+                //var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
+                var employer=_mapper.Map<Employer>(value);
                 var e=await _employerService.AddAsync(employer);
                 return Ok(e);
-            //}
-            //return Conflict();
         }
 
         // PUT api/<EmployersController>/5
@@ -70,12 +67,12 @@ namespace JobNet.Controllers
 
         //}
 
-        // DELETE api/<EmployersController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //    int index = _employerService.GetList().FindIndex(x => x.EmployerID == id);
-        //    _employerService.GetList().RemoveAt(index);
-        //}
+        //DELETE api/<EmployersController>/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var employer= await _employerService.DeleteAsync(id);
+            return Ok(employer);
+        }
     }
 }

@@ -15,6 +15,6 @@ namespace JobNet.Core.Repositories
 
         public Task<Employer> AddAsync(Employer employer);
 
-
+        public Task<Employer> DeleteAsync(int id);
     }
 }

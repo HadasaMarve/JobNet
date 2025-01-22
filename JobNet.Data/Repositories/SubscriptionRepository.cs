@@ -33,5 +33,13 @@ namespace JobNet.Data.Repositories
             await _context.SaveChangesAsync();
             return subscription;
         }
+
+        public async Task<Subscription> DeleteAsync(int id)
+        {
+            Subscription subscription = Get(id);
+            _context.Subscriptions.Remove(subscription);
+            await _context.SaveChangesAsync();
+            return subscription;
+        }
     }
 }

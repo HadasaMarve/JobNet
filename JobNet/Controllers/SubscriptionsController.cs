@@ -5,6 +5,7 @@ using JobNet.Core.DTOs;
 using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
+using JobNet.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -46,16 +47,12 @@ namespace JobNet.Controllers
 
         // POST api/<JobsController>
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] Subscription value)
+        public async Task<ActionResult> Post([FromBody] SubscriptionPostModel value)
         {
-            //var subscription = _subscriptionService.Get(value.SubscriberID);
-            //if (subscription == null)
-            //{
-                var subscription = new Subscription { SubscriberID = value.SubscriberID, UserId = value.UserId, SubscriptionDate = value.SubscriptionDate};
+                //var subscription = new Subscription { SubscriberID = value.SubscriberID, UserId = value.UserId, SubscriptionDate = value.SubscriptionDate};
+                var subscription=_mapper.Map<Subscription>(value);
                 var s=await _subscriptionService.AddAsync(subscription);
                 return Ok(s);
-            //}
-            //return Conflict();
         }
 
         // PUT api/<JobsController>/5
@@ -70,11 +67,11 @@ namespace JobNet.Controllers
         //}
 
         // DELETE api/<JobsController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //    var index = _subscriptionService.GetList().FindIndex(e => e.SubscriberID == id);
-        //    _subscriptionService.GetList().Remove(_subscriptionService.GetList()[index]);
-        //}
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var subscription = await _subscriptionService.DeleteAsync(id);
+            return Ok(subscription);
+        }
     }
 }

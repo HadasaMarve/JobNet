@@ -34,5 +34,10 @@ namespace JobNet.Service
         {
             return await _SubscriptionRepository.AddAsync(subscription);
         }
+
+        public async Task<Subscription> DeleteAsync(int id)
+        {
+            return await _SubscriptionRepository.DeleteAsync(id);
+        }
     }
 }

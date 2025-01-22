@@ -34,5 +34,10 @@ namespace JobNet.Service
         {
             return await _UserRepository.AddAsync(user);
         }
+
+        public async Task<User> DeleteAsync(int id)
+        {
+            return await _UserRepository.DeleteAsync(id);
+        }
     }
 }

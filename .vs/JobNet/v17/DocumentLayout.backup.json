@@ -1,12 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\\u05D3\u05E1\u05D9\\\u05D4\u05E0\u05D3\u05E1\u05D0\u05D9\u05DD\\\u05E9\u05E0\u05D4 \u05D1\\net Core\\lesson9\\JobNet\\JobNet\\",
-  "Documents": [],
+  "WorkspaceRootPath": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\DataContext.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\DataContext.cs",
+              "RelativeToolTip": "JobNet.Data\\DataContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:41:58.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Program.cs",
+              "RelativeDocumentMoniker": "JobNet\\Program.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Program.cs",
+              "RelativeToolTip": "JobNet\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:35:56.246Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

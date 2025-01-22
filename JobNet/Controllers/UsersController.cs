@@ -5,6 +5,7 @@ using JobNet.Core.DTOs;
 using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
+using JobNet.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -46,16 +47,12 @@ namespace JobNet.Controllers
 
         // POST api/<UsersController>
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] User value)
+        public async Task<ActionResult> Post([FromBody] UserPostModel value)
         {
-            //var user = _userService.Get(value.UserID);
-            //if (user == null)
-            //{
-                var user = new User { UserID = value.UserID, UserName = value.UserName, Email = value.Email, Password = value.Password, Role = value.Role };
+                //var user = new User { UserID = value.UserID, UserName = value.UserName, Email = value.Email, Password = value.Password, Role = value.Role };
+                var user=_mapper.Map<User>(value);
                 var u=await _userService.AddAsync(user);
                 return Ok(u);
-            //}
-            //return Conflict();
         }
 
         // PUT api/<UsersController>/5
@@ -71,12 +68,12 @@ namespace JobNet.Controllers
         //}
 
         // DELETE api/<UsersController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //    int index = _userService.GetList().FindIndex(x => x.UserID == id);
-        //    _userService.GetList().RemoveAt(index);
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var user = await _userService.DeleteAsync(id);
+            return Ok(user);
 
-        //}
+        }
     }
 }

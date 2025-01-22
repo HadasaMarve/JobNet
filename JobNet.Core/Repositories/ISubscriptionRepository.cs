@@ -15,5 +15,7 @@ namespace JobNet.Core.Repositories
 
         public Task<Subscription> AddAsync(Subscription subscription);
 
+        public Task<Subscription> DeleteAsync(int id);
+
     }
 }
