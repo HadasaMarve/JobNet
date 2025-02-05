@@ -41,5 +41,10 @@ namespace JobNet.Service
         {
             return await _EmployerRepository.DeleteAsync(id);
         }
+
+        public async Task<Employer> UpdateAsync(Employer employer)
+        {
+            return await _EmployerRepository.UpdateAsync(employer);
+        }
     }
 }

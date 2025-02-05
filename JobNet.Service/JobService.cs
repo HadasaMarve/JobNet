@@ -39,5 +39,10 @@ namespace JobNet.Service
         {
             return await _JobRepository.DeleteAsync(id);
         }
+
+        public async Task<Job> UpdateAsync(Job job)
+        {
+            return await _JobRepository.UpdateAsync(job);
+        }
     }
 }

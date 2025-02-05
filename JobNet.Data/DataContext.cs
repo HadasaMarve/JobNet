@@ -1,4 +1,4 @@
-﻿//using AutoMapper.Configuration;
+﻿using AutoMapper.Configuration;
 using JobNet.Core.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;

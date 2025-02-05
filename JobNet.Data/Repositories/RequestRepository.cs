@@ -41,5 +41,18 @@ namespace JobNet.Data.Repositories
             await _context.SaveChangesAsync();
             return request;
         }
+
+        public async Task<Request> UpdateAsync(Request request)
+        {
+            Request r = Get(request.RequestID);
+            if (r is null)
+                throw new Exception("Request not found.");
+            r.Message = request.Message;
+            r.UserID = request.UserID;
+            r.JobID = request.JobID;
+            r.RequestDate = request.RequestDate;
+            await _context.SaveChangesAsync();
+            return r;
+        }
     }
 }

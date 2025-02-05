@@ -6,6 +6,7 @@ using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using JobNet.Service;
+using static JobNet.Core.Entities.User;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,11 +17,13 @@ namespace JobNet.Controllers
     public class SubscriptionsController : ControllerBase
     {
         private readonly ISubscriptionService _subscriptionService;
+        private readonly IUserService _userService;
         private readonly IMapper _mapper;
 
-        public SubscriptionsController(ISubscriptionService subscriptionService, IMapper mapper)
+        public SubscriptionsController(ISubscriptionService subscriptionService, IUserService userService, IMapper mapper)
         {
             _subscriptionService = subscriptionService;
+            _userService = userService;
             _mapper = mapper;
         }
         // GET: api/<JobsController>
@@ -49,10 +52,13 @@ namespace JobNet.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] SubscriptionPostModel value)
         {
-                //var subscription = new Subscription { SubscriberID = value.SubscriberID, UserId = value.UserId, SubscriptionDate = value.SubscriptionDate};
-                var subscription=_mapper.Map<Subscription>(value);
-                var s=await _subscriptionService.AddAsync(subscription);
-                return Ok(s);
+            var user = new User { UserName = value.UserName, Password = value.Password, Role = eRole.Subscription, Email = value.Email };
+            var User = await _userService.AddAsync(user);
+            var subscription = _mapper.Map<Subscription>(value);
+            subscription.User = User;
+            subscription.UserId = User.UserID;
+            var s = await _subscriptionService.AddAsync(subscription);
+            return Ok(s);
         }
 
         // PUT api/<JobsController>/5

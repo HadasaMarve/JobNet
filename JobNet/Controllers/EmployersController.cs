@@ -1,9 +1,11 @@
-﻿using AutoMapper;
+﻿   using AutoMapper;
 using JobNet.Core.DTOs;
 using JobNet.Core.Entities;
 using JobNet.Core.Services;
 using JobNet.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static JobNet.Core.Entities.User;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,14 +13,17 @@ namespace JobNet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployersController : ControllerBase
     {
         private readonly IEmployerService _employerService;
         private readonly IMapper _mapper;
+        private readonly IUserService _userService;
 
-        public EmployersController(IEmployerService employerService, IMapper mapper)
+        public EmployersController(IEmployerService employerService, IUserService userService, IMapper mapper)
         {
             _employerService = employerService;
+            _userService = userService;
             _mapper = mapper;
         }
 
@@ -49,23 +54,23 @@ namespace JobNet.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] EmployerPostModel value)
         {
-                //var employer = new Employer { EmployerID = value.EmployerID, CompanyName = value.CompanyName, Industry = value.Industry, UserID=value.UserID };
-                var employer=_mapper.Map<Employer>(value);
-                var e=await _employerService.AddAsync(employer);
-                return Ok(e);
+            var user = new User { UserName = value.UserName, Password = value.Password, Role = eRole.Employer, Email = value.Email };
+            var User= await _userService.AddAsync(user);
+            var employer=_mapper.Map<Employer>(value);
+            employer.User = User;
+            employer.UserID = value.UserID;
+            var e=await _employerService.AddAsync(employer);
+            return Ok(e);
         }
 
         // PUT api/<EmployersController>/5
-        //[HttpPut("{id}")]
-        //public Employer Put(int id, [FromBody] Employer value)
-        //{
-        //    int index = _employerService.GetList().FindIndex(x => x.EmployerID == id);
-        //    _employerService.GetList()[index].UserID = value.UserID;
-        //    _employerService.GetList()[index].CompanyName = value.CompanyName;
-        //    _employerService.GetList()[index].Industry = value.Industry;
-        //    return _employerService.GetList()[index];
-
-        //}
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromBody] EmployerPostModel employer)
+        {
+            var emp = _mapper.Map<Employer>(employer);
+            var e=await _employerService.UpdateAsync(emp);
+            return Ok(e);
+        }
 
         //DELETE api/<EmployersController>/5
         [HttpDelete("{id}")]

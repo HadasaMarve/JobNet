@@ -1,8 +1,10 @@
-﻿using System;
+﻿using JobNet.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static JobNet.Core.Entities.User;
 
 namespace JobNet.Core.DTOs
 {
@@ -16,6 +18,6 @@ namespace JobNet.Core.DTOs
 
         public string Email { get; set; }
 
-        public string Role { get; set; }
+        public eRole Role { get; set; }
     }
 }

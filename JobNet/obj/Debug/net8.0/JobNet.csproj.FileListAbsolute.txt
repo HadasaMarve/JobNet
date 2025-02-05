@@ -752,3 +752,4 @@ T:\Group B\NetCore\dasi marve\lesson11\JobNet\JobNet\obj\Debug\net8.0\JobNet.gen
 T:\Group B\NetCore\dasi marve\lesson11\JobNet\JobNet\obj\Debug\net8.0\ref\JobNet.dll
 T:\Group B\NetCore\dasi marve\lesson11\JobNet\JobNet\bin\Debug\net8.0\appsettings.Production.json
 T:\Group B\NetCore\dasi marve\lesson11\JobNet\JobNet\bin\Debug\net8.0\System.Formats.Asn1.dll
+T:\Group B\NetCore\dasi marve\lesson11\JobNet\JobNet\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

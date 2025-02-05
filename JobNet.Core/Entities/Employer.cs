@@ -12,7 +12,7 @@ namespace JobNet.Core.Entities
         [Key]
         public int EmployerID { get; set; }
         public int UserID { get; set; }
-        //public User User { get; set; }
+        public User User { get; set; }
         public string CompanyName { get; set; }
         public string Industry { get; set; }
 

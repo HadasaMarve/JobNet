@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A45823C0-859B-4445-954A-358CDD58C076}|JobNet.Service\\JobNet.Service.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.service\\employerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45823C0-859B-4445-954A-358CDD58C076}|JobNet.Service\\JobNet.Service.csproj|solutionrelative:jobnet.service\\employerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091059_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JobNet.Data\\Migrations\\20250205091059_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091015_add-user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JobNet.Data\\Migrations\\20250205091015_add-user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.core\\repositories\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|solutionrelative:jobnet.core\\repositories\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|solutionrelative:jobnet.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\controllers\\subscriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\models\\subscriptionpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\models\\subscriptionpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.core\\dtos\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB62A356-E6B8-4045-8DE5-B2FFC5D49723}|JobNet.Core\\JobNet.Core.csproj|solutionrelative:jobnet.core\\dtos\\subscriptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\repositories\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\repositories\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\controllers\\employerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.data\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD46BD7A-4C5A-4434-B190-C9DDB9202657}|JobNet.Data\\JobNet.Data.csproj|solutionrelative:jobnet.data\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45823C0-859B-4445-954A-358CDD58C076}|JobNet.Service\\JobNet.Service.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet.service\\employerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45823C0-859B-4445-954A-358CDD58C076}|JobNet.Service\\JobNet.Service.csproj|solutionrelative:jobnet.service\\employerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|t:\\group b\\netcore\\dasi marve\\lesson11\\jobnet\\jobnet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89592FD-2127-485D-8565-DC509E117F69}|JobNet\\JobNet.csproj|solutionrelative:jobnet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +91,175 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250205091059_init.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091059_init.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Migrations\\20250205091059_init.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091059_init.cs",
+              "RelativeToolTip": "JobNet.Data\\Migrations\\20250205091059_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:10:59.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "JobNet\\appsettings.Production.json",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.Production.json",
+              "RelativeToolTip": "JobNet\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T09:10:39.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "JobNet\\appsettings.Development.json",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.Development.json",
+              "RelativeToolTip": "JobNet\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T09:10:34.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250205091015_add-user.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091015_add-user.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Migrations\\20250205091015_add-user.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Migrations\\20250205091015_add-user.cs",
+              "RelativeToolTip": "JobNet.Data\\Migrations\\20250205091015_add-user.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:10:15.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.json",
+              "RelativeDocumentMoniker": "JobNet\\appsettings.json",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\appsettings.json",
+              "RelativeToolTip": "JobNet\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T09:07:41.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\DataContext.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\DataContext.cs",
+              "RelativeToolTip": "JobNet.Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:07:27.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubscriptionRepository.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\SubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Repositories\\SubscriptionRepository.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\SubscriptionRepository.cs",
+              "RelativeToolTip": "JobNet.Data\\Repositories\\SubscriptionRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:58:40.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\Entities\\Subscription.cs",
+              "RelativeDocumentMoniker": "JobNet.Core\\Entities\\Subscription.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\Entities\\Subscription.cs",
+              "RelativeToolTip": "JobNet.Core\\Entities\\Subscription.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:58:26.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubscriptionPostModel.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Models\\SubscriptionPostModel.cs",
+              "RelativeDocumentMoniker": "JobNet\\Models\\SubscriptionPostModel.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Models\\SubscriptionPostModel.cs",
+              "RelativeToolTip": "JobNet\\Models\\SubscriptionPostModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:56:33.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubscriptionDto.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\DTOs\\SubscriptionDto.cs",
+              "RelativeDocumentMoniker": "JobNet.Core\\DTOs\\SubscriptionDto.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\DTOs\\SubscriptionDto.cs",
+              "RelativeToolTip": "JobNet.Core\\DTOs\\SubscriptionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:56:24.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "JobNet.Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:37:16.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "JobNet\\Controllers\\UsersController.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "JobNet\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:31:11.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Repositories\\RequestRepository.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\RequestRepository.cs",
+              "RelativeToolTip": "JobNet.Data\\Repositories\\RequestRepository.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAIwDUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:27:13.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "EmployerService.cs",
               "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Service\\EmployerService.cs",
               "RelativeDocumentMoniker": "JobNet.Service\\EmployerService.cs",
@@ -34,33 +267,72 @@
               "RelativeToolTip": "JobNet.Service\\EmployerService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:11:50.017Z",
+              "WhenOpened": "2025-02-05T08:27:03.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "JobNet\\Controllers\\UsersController.cs",
-              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "JobNet\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAuwEcAAAA2AAAA",
+              "DocumentIndex": 8,
+              "Title": "ISubscriptionRepository.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\Repositories\\ISubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "JobNet.Core\\Repositories\\ISubscriptionRepository.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Core\\Repositories\\ISubscriptionRepository.cs",
+              "RelativeToolTip": "JobNet.Core\\Repositories\\ISubscriptionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:06:54.699Z",
+              "WhenOpened": "2025-02-05T08:58:36.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
+              "Title": "EmployerRepository.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\EmployerRepository.cs",
+              "RelativeDocumentMoniker": "JobNet.Data\\Repositories\\EmployerRepository.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet.Data\\Repositories\\EmployerRepository.cs",
+              "RelativeToolTip": "JobNet.Data\\Repositories\\EmployerRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:26:49.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "SubscriptionsController.cs",
               "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\SubscriptionsController.cs",
               "RelativeDocumentMoniker": "JobNet\\Controllers\\SubscriptionsController.cs",
               "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\SubscriptionsController.cs",
               "RelativeToolTip": "JobNet\\Controllers\\SubscriptionsController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAowEgAAAAMAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwDoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:03:28.424Z",
+              "WhenOpened": "2025-02-05T08:08:02.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmployersController.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\EmployersController.cs",
+              "RelativeDocumentMoniker": "JobNet\\Controllers\\EmployersController.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\EmployersController.cs",
+              "RelativeToolTip": "JobNet\\Controllers\\EmployersController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:24:54.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JobNet\\Controllers\\AuthController.cs",
+              "ToolTip": "T:\\Group B\\NetCore\\dasi marve\\lesson11\\JobNet\\JobNet\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JobNet\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:24:04.488Z",
               "EditorCaption": ""
             }
           ]

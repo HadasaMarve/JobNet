@@ -43,6 +43,8 @@ namespace JobNet.Data.Migrations
 
                     b.HasKey("EmployerID");
 
+                    b.HasIndex("UserID");
+
                     b.ToTable("Employers");
                 });
 
@@ -149,9 +151,8 @@ namespace JobNet.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -160,6 +161,17 @@ namespace JobNet.Data.Migrations
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("JobNet.Core.Entities.Employer", b =>
+                {
+                    b.HasOne("JobNet.Core.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("JobNet.Core.Entities.Job", b =>

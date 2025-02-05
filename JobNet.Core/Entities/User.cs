@@ -18,7 +18,11 @@ namespace JobNet.Core.Entities
 
         public string Email { get; set; }
 
-        public string Role { get; set; }
+        public eRole Role { get; set; }
 
+        public enum eRole
+        {
+            User,Employer,Manager,Subscription
+        }
     }
 }

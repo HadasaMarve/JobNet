@@ -41,5 +41,17 @@ namespace JobNet.Data.Repositories
             await _context.SaveChangesAsync();
             return employer;
         }
+
+        public async Task<Employer> UpdateAsync(Employer employer)
+        {
+            Employer e=Get(employer.EmployerID);
+            if (e is null)
+                throw new Exception("Employer not found.");
+            e.UserID=employer.UserID;
+            e.CompanyName=employer.CompanyName;
+            e.Industry=employer.Industry;
+            await _context.SaveChangesAsync();
+            return employer;
+        }
     }
 }

@@ -57,19 +57,13 @@ namespace JobNet.Controllers
             }
 
         // PUT api/<JobsController>/5
-        //[HttpPut("{id}")]
-        //public Job Put(int id, [FromBody] Job value)
-        //{
-        //    int index = _jobService.GetList().FindIndex(x => x.JobID == id);
-        //    _jobService.GetList()[index].JobID = value.JobID;
-        //    _jobService.GetList()[index].EmployerID = value.EmployerID;
-        //    _jobService.GetList()[index].Title = value.Title;
-        //    _jobService.GetList()[index].Description = value.Description;
-        //    _jobService.GetList()[index].Location = value.Location;
-        //    _jobService.GetList()[index].Salary = value.Salary;
-        //    _jobService.GetList()[index].PostedDate = value.PostedDate;
-        //    return _jobService.GetList()[index];
-        //}
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromBody] JobPostModel value)
+        {
+            var job = _mapper.Map<Job>(value);
+            var j = await _jobService.UpdateAsync(job);
+            return Ok(j);
+        }
 
         // DELETE api/<JobsController>/5
         [HttpDelete("{id}")]
